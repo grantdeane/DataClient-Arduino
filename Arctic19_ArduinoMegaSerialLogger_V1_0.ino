@@ -104,6 +104,9 @@ void setup() {
     SDLoggingEnabled = true;  // Enable logging if the serial card initializes
   }
 
+  // Initialize Navigation card
+  Serial3.begin(19200);
+
   // Initialize the serial character buffers
   buf[0][0] = '\0'; 
   buf[1][0] = '\0'; 
